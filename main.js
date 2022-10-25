@@ -1,7 +1,7 @@
 const fs = require("fs");
 var md = require('markdown-it')();
 
-let str = fs.readFileSync("./test.md",'utf-8')
+let str = fs.readFileSync("./1.3.md",'utf-8')
 
 var result = md.render(str);
 
