@@ -24,4 +24,7 @@ while (result.indexOf("&lt;$") >= 0) {
 
 fs.writeFileSync("./data.js",`let md = \`${result}\``,'utf-8')
 
+fs.mkdirSync("dist")
 
+fs.cpSync("./index.html","./dist/index.html")
+fs.cpSync("./data.js","./dist/data.js")
